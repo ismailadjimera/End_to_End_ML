@@ -1,0 +1,4 @@
+artifact_location: file:///home/idjimera/Documents/End-to-End-AutoML-Insurance-main/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: automl-insurance

@@ -1,0 +1,37 @@
+# Run this Docker compose file using `docker-compose up -d --build`
+# No need specify version 2 or 3 in latest Compose specification
+version: "3.7"
+services:
+  # Backend service (FastAPI and H2O Model loaded from MLflow Tracking)
+  backend:
+    build: backend
+    image: e2e-automl-backend:latest     
+    ports:
+      - "8001:8001"
+      - "54321:54321"
+    volumes:
+      - ./backend:/app/backend
+    networks:
+      project_network:
+        ipv4_address: 172.18.0.5
+
+  # Frontend service (Streamlit UI)
+  frontend:
+    build: frontend
+    image: e2e-automl-frontend:latest
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app/frontend
+    depends_on: 
+    - backend
+    networks:
+      project_network:
+        ipv4_address: 172.18.0.6
+
+networks:
+  project_network:
+    ipam:
+      driver: default
+      config:
+          - subnet: 172.18.0.0/16

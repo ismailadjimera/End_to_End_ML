@@ -1,0 +1,15 @@
+artifact_uri: file:///home/idjimera/Documents/End-to-End-AutoML-Insurance-main/mlruns/1/1c3d666261fd4034ac8cd463cd2a42da/artifacts
+end_time: 1660247732671
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 1c3d666261fd4034ac8cd463cd2a42da
+run_uuid: 1c3d666261fd4034ac8cd463cd2a42da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1660247732656
+status: 3
+tags: []
+user_id: idjimera
