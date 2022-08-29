@@ -1,6 +1,6 @@
 # =========================================
 # H2O AutoML Training with MLflow Tracking
-# Author: Kenneth Leung
+# Inspired from Kenneth Leung
 # =========================================
 import argparse
 import json

@@ -55,3 +55,5 @@ ___
 - https://rihab-feki.medium.com/deploying-machine-learning-models-with-streamlit-fastapi-and-docker-bb16bbf8eb91
 - https://davidefiocco.github.io/streamlit-fastapi-ml-serving/
 - https://rihab-feki.medium.com/deploying-machine-learning-models-with-streamlit-fastapi-and-docker-bb16bbf8eb91
+- https://www.youtube.com/watch?v=eCbH2nPL9sU
+- https://github.com/Sven-Bo/streamlit-sales-dashboard-with-userauthentication-database

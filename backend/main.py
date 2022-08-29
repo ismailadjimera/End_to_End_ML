@@ -1,7 +1,6 @@
 # ===========================
 # Module: Backend setup (H2O, MLflowy)
-# Author: Kenneth Leung
-# Last Modified: 02 Jun 2022
+# Inspired from Kenneth Leung
 # ===========================
 # Command to execute script locally: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 # Command to run Docker image: docker run -d -p 8000:8000 <fastapi-app-name>:latest
