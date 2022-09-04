@@ -88,7 +88,7 @@ if authentication_status:
                 print(output)
                 df_output = test_df.copy()
                 df_output["pred"] = eval(json.dumps(output.json()))
-                st.write(df_output.head())
+                st.write(df_output.iloc[:, [0,1,2,3,-1]].head())
                 st.download_button(
                     label='Download',
                     data=json.dumps(output.json()), # Download as JSON file object

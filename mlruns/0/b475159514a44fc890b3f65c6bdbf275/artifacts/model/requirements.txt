@@ -1,0 +1,5 @@
+mlflow
+colorama==0.4.5
+h2o==3.34.0.3
+ipykernel==6.15.1
+numpy==1.23.1
