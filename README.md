@@ -44,6 +44,15 @@ ___
     - `03_H2O_AutoML_with_MLflow.ipynb` - Notebook showing the full H2O AutoML training and MLflow tracking process, along with model inference to get predictions  
 - `/submissions` - Folder containing CSV files for Kaggle submission to retrieve model accuracy scores
 
+## How to use it
+- First of all you need to train your autoML and registry your model with Mlflow. This can be done with 
+`
+python train.py — —target ‘Response'
+`
+in command prompt. Consider running the training on Google Colab so that you can spare your local machine from the resource-intensive training runs.
+- Activate FastAPI endpoint by running the uvicorn server (from the backend subdirectory where the script is stored) with the following command `uvicorn main:app --host 0.0.0.0 --port 8001`. The FastAPI endpoint will be served in the local machine, and we can access the API interface at 127.0.0.1:8000/docs (or localhost:8000/docs)
+- Open another separate command prompt and initialize the Streamlit server (from the frontend folder containing the script) with: `streamlit run app.py`
+
 ___
 ## References
 - https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html
