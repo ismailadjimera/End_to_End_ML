@@ -1,3 +1,8 @@
+# =========================================
+# Authentification management
+# Inspired from Sven Bo via code is fun
+# =========================================
+
 import os
 
 from deta import Deta  # pip install deta

@@ -1,7 +1,6 @@
 # =========================================
 # H2O AutoML Training with MLflow Tracking
-# Author: Kenneth Leung
-# Last Modified: 30 May 2022
+# Inspired from Kenneth Leung
 # =========================================
 # Command to execute script locally: streamlit run app.py
 # Command to run Docker image: docker run -d -p 8501:8501 <streamlit-app-name>:latest
