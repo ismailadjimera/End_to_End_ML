@@ -44,6 +44,10 @@ ___
     - `03_H2O_AutoML_with_MLflow.ipynb` - Notebook showing the full H2O AutoML training and MLflow tracking process, along with model inference to get predictions  
 - `/submissions` - Folder containing CSV files for Kaggle submission to retrieve model accuracy scores
 
+## Create a local postgres docker DB for authentification
+`docker pull postgres`
+`docker run --name ml_cross_sell -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres`
+
 ## How to use it
 - First of all you need to train your autoML and registry your model with Mlflow. This can be done with 
 `

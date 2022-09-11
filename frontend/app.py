@@ -8,8 +8,10 @@
 import io
 import json
 
-import database as db
+# import database as db
+from conn_db import conn
 import pandas as pd
+import pandas.io.sql as psql
 import requests
 import streamlit as st
 import streamlit_authenticator as stauth
@@ -19,11 +21,17 @@ st.set_page_config(page_title="End-to-End AutoML Project: Insurance Cross-Sell",
 # 
 
 # --- USER AUTHENTICATION ---
-users = db.fetch_all_users()
+# users = db.fetch_all_users()
 
-usernames = [user["key"] for user in users]
-names = [user["name"] for user in users]
-hashed_passwords = [user["password"] for user in users]
+# This is very dangerous use placeholders instead
+users = psql.read_sql('SELECT * FROM users_db', conn)
+usernames = users["key"].tolist()
+names = users["name"].tolist()
+hashed_passwords = users["password"].tolist()
+
+# usernames = [user["key"] for user in users]
+# names = [user["name"] for user in users]
+# hashed_passwords = [user["password"] for user in users]
 
 credentials = {"usernames":{}}
 
