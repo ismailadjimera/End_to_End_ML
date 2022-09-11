@@ -4,12 +4,12 @@
 # =========================================
 
 import os
+import sys
 
+import pandas as pd
+import psycopg2
 from deta import Deta  # pip install deta
 from dotenv import load_dotenv  # pip install python-dotenv
-
-import psycopg2
-import pandas as pd
 
 load_dotenv(".env")
 DETA_KEY = os.getenv("DETA_KEY")

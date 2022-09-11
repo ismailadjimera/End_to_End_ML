@@ -8,13 +8,13 @@
 import io
 import json
 
-# import database as db
-from conn_db import conn
 import pandas as pd
 import pandas.io.sql as psql
 import requests
 import streamlit as st
 import streamlit_authenticator as stauth
+# import database as db
+from conn_db import conn
 
 st.set_page_config(page_title="End-to-End AutoML Project: Insurance Cross-Sell", layout="wide")
 
